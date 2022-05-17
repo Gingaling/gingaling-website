@@ -1,95 +1,101 @@
-import './App.css';
+import "./App.css";
 /* eslint-disable no-tabs */
-import React, { useState } from 'react'
-import { Route, Routes } from 'react-router-dom'
-
+import React, { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 
 // import AutoDismissAlert from './components/AutoDismissAlert/AutoDismissAlert'
-import Header from './components/Header/Header'
+import Header from "./components/Header/Header";
 // import SignUp from './components/auth/SignUp'
 // import SignIn from './components/auth/SignIn'
 // import SignOut from './components/auth/SignOut'
 // import ChangePassword from './components/auth/ChangePassword'
-import SyllabusPage from './pages/SyllabusPage/SyllabusPage'
+import SyllabusPage from "./pages/SyllabusPage/SyllabusPage";
 
-export default function App () {
-  const [user, setUser] = useState(null)
-  const [msgAlerts, setMsgAlerts] = useState([])
+export default function App() {
+  const [user, setUser] = useState(null);
+  const [msgAlerts, setMsgAlerts] = useState([]);
+  const [isFontActive, setIsFontActive] = useState(false);
+
+  function toggleFont() {
+    setIsFontActive(!isFontActive);
+    console.log(isFontActive);
+  }
 
   const DUMMY_DATA = [
     {
-      courseName: 'Accessibility in the Modern Age',
+      courseName: "Accessibility in the Modern Age",
       courseDescription:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error',
-      instructorName: 'Herbert Hoover',
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: "Herbert Hoover",
       policies:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error'
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
     {
-      courseName: 'Science',
+      courseName: "Science",
       courseDescription:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error',
-      instructorName: 'Mary Magdalene',
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: "Mary Magdalene",
       policies:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error'
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
     {
-      courseName: 'Math',
+      courseName: "Math",
       courseDescription:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error',
-      instructorName: 'Albert Einstein',
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: "Albert Einstein",
       policies:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error'
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
     {
-      courseName: 'Crafts',
+      courseName: "Crafts",
       courseDescription:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error',
-      instructorName: 'Martha Stewart',
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: "Martha Stewart",
       policies:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error'
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
     {
-      courseName: 'Anthropology',
+      courseName: "Anthropology",
       courseDescription:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error',
-      instructorName: 'George Clooney',
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: "George Clooney",
       policies:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error'
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
     {
-      courseName: 'Writing and Composition',
+      courseName: "Writing and Composition",
       courseDescription:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error',
-      instructorName: 'Theresa Hummingbird',
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: "Theresa Hummingbird",
       policies:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error'
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
     {
-      courseName: 'This Class',
+      courseName: "This Class",
       courseDescription:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error',
-      instructorName: 'Dwayne Johnson',
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: "Dwayne Johnson",
       policies:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error'
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
     {
-      courseName: 'This Class Also',
+      courseName: "This Class Also",
       courseDescription:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error',
-      instructorName: 'Harry Potter',
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: "Harry Potter",
       policies:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error'
-    }]
-//   const clearUser = () => setUser(null)
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+    },
+  ];
+  //   const clearUser = () => setUser(null)
 
-//   const msgAlert = ({ heading, message, variant }) => {
-//     const id = uuid()
-//     setMsgAlerts((msgAlerts) => [
-//       ...msgAlerts,
-//       { heading, message, variant, id }
-//     ])
-//   }
+  //   const msgAlert = ({ heading, message, variant }) => {
+  //     const id = uuid()
+  //     setMsgAlerts((msgAlerts) => [
+  //       ...msgAlerts,
+  //       { heading, message, variant, id }
+  //     ])
+  //   }
 
   return (
     <>
@@ -103,7 +109,7 @@ export default function App () {
           id={msgAlert.id}
         />
       ))} */}
-      <main className='container'>
+      <main className="container">
         <Routes>
           {/* <Route
             path='/sign-up'
@@ -124,13 +130,17 @@ export default function App () {
             element={<ChangePassword msgAlert={msgAlert} user={user} />}
           /> */}
           <Route
-            path='/syllabus'
-            element={<SyllabusPage data={DUMMY_DATA} />}
+            path="/syllabus"
+            element={
+              <SyllabusPage
+                data={DUMMY_DATA}
+                isFontActive={isFontActive}
+                toggleFont={toggleFont}
+              />
+            }
           />
         </Routes>
       </main>
     </>
-  )
+  );
 }
-
-
