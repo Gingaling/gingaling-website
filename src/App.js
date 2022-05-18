@@ -10,7 +10,9 @@ import Header from "./components/Header/Header";
 // import SignOut from './components/auth/SignOut'
 // import ChangePassword from './components/auth/ChangePassword'
 import SyllabusPage from "./pages/SyllabusPage/SyllabusPage";
+
 import Resources from "./pages/Resources/Resources";
+
 
 export default function App() {
   const [user, setUser] = useState(null);
