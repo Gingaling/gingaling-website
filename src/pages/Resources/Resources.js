@@ -12,10 +12,5 @@ export default function Resources(props) {
     return "<h1>No Data</h1>";
   }
 
-  return (
-    <>
-      {generateResourceCards()}
-      {/* // <ToggleButton /> */}
-    </>
-  );
+  return <>{generateResourceCards()}</>;
 }
