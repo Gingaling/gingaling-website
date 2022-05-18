@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 export default function CourseCard (props) {
 
-  const [isActive, setIsActive] = useState(false);
+  const[isActive, setIsActive] = useState(false);
 
   const toggleDiffStyle = () => {
     setIsActive(!isActive);
@@ -13,14 +13,16 @@ export default function CourseCard (props) {
   return (
     <>
     <button onClick={toggleDiffStyle}>Click Me</button>
-      <Card style={{ width: '18rem' }}>
-        <Card.Body id={`${isActive ? "diffStyle" : "null"}`}>
+      <Card>
+        <Card.Body id="flex" id={`${isActive ? "diffStyle" : "null"}`}>
+        <div>
           <Card.Title>{props.courseData.courseName}</Card.Title>
           <Card.Subtitle className='mb-2 text-muted'>
             {props.courseData.instructorName}
           </Card.Subtitle>
           <Card.Text>{props.courseData.courseDescription}</Card.Text>
           <Card.Link href='#'>Link to Details Page</Card.Link>
+          </div>
         </Card.Body>
       </Card>
     </>
