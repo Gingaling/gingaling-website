@@ -58,7 +58,7 @@ export default function CourseCard(props) {
             id={`${isActiveButton ? "buttonStyle" : "null"}`}
             onClick={toggleLtrSpacingStyle}
           >
-            Letter Spacing ⬆️
+            Spacing ✚
           </button>
         </section>
       </Card>
