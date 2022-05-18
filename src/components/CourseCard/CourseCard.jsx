@@ -1,53 +1,46 @@
-
 import React from 'react'
 import Card from 'react-bootstrap/Card'
 import { useState } from 'react'
 
-export default function CourseCard (props) {
+export default function CourseCard(props) {
 
-  const[isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+
+  const [isContrast, setIsContrast] = useState(false);
+
+  const [isActiveButton, setIsActiveButton] = useState(true);
+
+    const [isLtrSpacingActive, setIsLtrSpacingActive] = useState(false);
 
   const toggleDiffStyle = () => {
     setIsActive(!isActive);
   }
 
+  const togglecontrastStyle = () => {
+    setIsContrast(!isContrast);
+  }
+
+  const toggleButtonStyle = () => {
+    setIsActiveButton(!isActiveButton);
+  }
+
+  const toggleLtrSpacingStyle = () => setIsLtrSpacingActive(!isLtrSpacingActive)
+
   return (
     <>
-    <button onClick={toggleDiffStyle}>Click Me</button>
-<<<<<<< HEAD
-      <Card>
-        <Card.Body id="flex" id={`${isActive ? "diffStyle" : "null"}`}>
-        <div>
-=======
-      <Card style={{ width: '18rem' }}>
+        <Card id={`${isContrast ? "contrastStyle" : "null"}`}>
         <Card.Body id={`${isActive ? "diffStyle" : "null"}`}>
-
-import React from "react";
-import Card from "react-bootstrap/Card";
-
-export default function CourseCard(props) {
-  return (
-    <>
-      <Card
-        style={{ width: "18rem" }}
-        className={`font${props.isFontActive ? "largeFont" : "null"}`}
-      >
-        <Card.Body>
-
->>>>>>> 37a03746496311620670e4fb7d59d7871cc89974
           <Card.Title>{props.courseData.courseName}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">
+          <Card.Subtitle className='mb-2 text-muted'>
             {props.courseData.instructorName}
           </Card.Subtitle>
           <Card.Text>{props.courseData.courseDescription}</Card.Text>
-<<<<<<< HEAD
-          <Card.Link href='#'>Link to Details Page</Card.Link>
-          </div>
-=======
-          <Card.Link href="#">Link to Details Page</Card.Link>
->>>>>>> 37a03746496311620670e4fb7d59d7871cc89974
+          <Card.Link href={props.courseData.link}>Link to Details Page</Card.Link>
         </Card.Body>
+        <section>
+       <button id={`${isActiveButton ? "buttonStyle" : "null"}`} onClick={toggleDiffStyle}>Font Size ✚</button>
+         <button id={`${isActiveButton ? "buttonStyle" : "null"}`} onClick={togglecontrastStyle}>Change Contrast</button> <button id={`${isActiveButton ? "buttonStyle" : "null"}`} onClick={toggleLtrSpacingStyle}>Letter Spacing ⬆️</button></section>
       </Card>
     </>
-  );
+  )
 }

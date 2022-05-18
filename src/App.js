@@ -26,7 +26,8 @@ export default function App() {
       courseName: "Accessibility in the Modern Age",
       courseDescription:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: "Herbert Hoover",
+      instructorName: <a href="mailto:hhoover@ga.edu">Herbert Hoover</a>,
+      link: "./Hoover",
       policies:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
@@ -34,7 +35,8 @@ export default function App() {
       courseName: "Science",
       courseDescription:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: "Mary Magdalene",
+      instructorName: <a href="mailto:mmagdalene@ga.edu">Mary Magdalene</a>,
+      link: "./Magdalene",
       policies:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
@@ -42,7 +44,8 @@ export default function App() {
       courseName: "Math",
       courseDescription:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: "Albert Einstein",
+      instructorName: <a href="mailto:aeinstein@ga.edu">Albert Einstein</a>,
+      link: "./Einstein",
       policies:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
@@ -50,7 +53,8 @@ export default function App() {
       courseName: "Crafts",
       courseDescription:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: "Martha Stewart",
+      instructorName: <a href="mailto: mstewart@ga.edu">Martha Stewart</a>,
+      link: "./Stewart",
       policies:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
@@ -58,7 +62,8 @@ export default function App() {
       courseName: "Anthropology",
       courseDescription:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: "George Clooney",
+      instructorName: <a href="mailto:gclooney@ga.edu">George Clooney</a>,
+      link: "./Clooney",
       policies:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
@@ -66,7 +71,8 @@ export default function App() {
       courseName: "Writing and Composition",
       courseDescription:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: "Theresa Hummingbird",
+      instructorName: <a href="mailto:thummingbird@ga.edu">Theresa Hummingbird</a>  ,
+      link: "./Hummingbird",
       policies:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
@@ -74,7 +80,8 @@ export default function App() {
       courseName: "This Class",
       courseDescription:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: "Dwayne Johnson",
+      instructorName: <a href="mailto:djohnson@ga.edu">Dwayne Johnson</a>,
+      link: "./Johnson",
       policies:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },
@@ -82,7 +89,8 @@ export default function App() {
       courseName: "This Class Also",
       courseDescription:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: "Harry Potter",
+      instructorName: <a href="mailto:hpotter@ga.edu">Harry Potter</a>,
+      link: "./Potter",
       policies:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
     },

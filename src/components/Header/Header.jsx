@@ -18,11 +18,11 @@ const authenticatedOptions = (
 
 const unauthenticatedOptions = (
   <>
-    <NavLink to="/sign-up" className="nav-link">
-      Sign Up
+    <NavLink to="/resources" className="nav-link">
+      Accessibility Resources
     </NavLink>
-    <NavLink to="/sign-in" className="nav-link">
-      Sign In
+    <NavLink to="/tbd" className="nav-link">
+      ???
     </NavLink>
   </>
 );
@@ -37,11 +37,12 @@ const alwaysOptions = (
 );
 
 const Header = ({ user }) => (
-  <Navbar bg="primary" variant="dark" expand="md">
+  <Navbar id="navbar" variant="dark" expand="md">
     <Container>
       <Navbar.Brand>
         <Link to="/" style={{ color: "#FFF", textDecoration: "none" }}>
-          react-auth-template
+          <img id="logo" src="https://i.imgur.com/lwmZQ9G.png"></img>
+          GA University
         </Link>
       </Navbar.Brand>
       {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
