@@ -8,12 +8,14 @@ export default function ButtonToggle(props) {
         >
           Font Size ✚
         </button>
+        <br></br>
         <button
           id={`${props.isActiveButton ? "buttonStyle" : "null"}`}
           onClick={props.togglecontrastStyle}
         >
           Change Contrast
         </button>{" "}
+        <br></br>
         <button
           id={`${props.isActiveButton ? "buttonStyle" : "null"}`}
           onClick={props.toggleLtrSpacingStyle}

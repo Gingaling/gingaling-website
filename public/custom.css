@@ -22,10 +22,12 @@ body {
 }
 
 #contrastStyle {
-	color: #e60000;
-	background-color: #ffff47;
-	font-size: 20px;
-	outline-width: 16px;
+
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  outline-width: 16px;
+
 }
 
 #diffStyle {
@@ -95,12 +97,14 @@ a:hover {
 }
 
 .buttonSection {
+
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 100;
 	margin-top: 80px;
 	/* margin-left: 600px; */
+
 }
 
 /* .buttonSection {
