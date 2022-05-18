@@ -96,4 +96,5 @@ a:hover {
 
 .buttonSection {
   position: fixed;
+  z-index: 120;
 }
