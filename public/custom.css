@@ -93,3 +93,12 @@ a:hover {
   width: auto;
   height: auto;
 }
+
+.buttonSection {
+  position: fixed;
+  /* top: 0;
+  width: 100%;
+  z-index: 100;
+  margin-top: 500px;
+  margin-left: 600px; */
+}

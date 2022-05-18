@@ -1,6 +1,5 @@
 import React from "react";
 import CourseCard from "../../components/CourseCard/CourseCard";
-// import ToggleButton from "../../components/ToggleButton/ToggleButton";
 
 export default function SyllabusPage(props) {
   console.log("this page");
@@ -13,16 +12,18 @@ export default function SyllabusPage(props) {
           key={d._id}
           courseData={d}
           isFontActive={props.isFontActive}
+          toggleFont={props.toggleFont}
+          togglecontrastStyle={props.togglecontrastStyle}
+          toggleButtonStyle={props.toggleButtonStyle}
+          toggleLtrSpacingStyle={props.toggleLtrSpacingStyle}
+          isContrast={props.isContrast}
+          isActiveButton={props.isActiveButton}
+          isLtrSpacingActive={props.isLtrSpacingActive}
         />
       ));
     }
     return "<h1>No Data</h1>";
   }
 
-  return (
-    <>
-      {generateCourseCards()}
-      {/* <ToggleButton /> */}
-    </>
-  );
+  return <>{generateCourseCards()}</>;
 }

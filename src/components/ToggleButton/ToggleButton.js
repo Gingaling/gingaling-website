@@ -1,19 +1,26 @@
-// export default function ButtonToggle(props) {
-//   return (
-//     <>
-//       <div className="container">
-//         <div className={`font${props.isFontActive ? "largeFont" : "null"}`}>
-//           <button onClick={props.toogleFont}>FONT SIZE</button>
-//         </div>
-//         <br></br>
-//         {/* <div className={`color${isActive ? "colorblind" : "null"}`}>
-//           <button onClick={toggleClass}>COLOR</button>
-//         </div>
-//         <br></br>
-//         <div className={`day${isActive ? "night" : "null"}`}>
-//           <button onClick={toggleClass}>NIGHT VERSION</button>
-//         </div> */}
-//       </div>
-//     </>
-//   );
-// }
+export default function ButtonToggle(props) {
+  return (
+    <>
+      <section className="buttonSection">
+        <button
+          id={`${props.isActiveButton ? "buttonStyle" : "null"}`}
+          onClick={props.toggleFont}
+        >
+          Font Size ✚
+        </button>
+        <button
+          id={`${props.isActiveButton ? "buttonStyle" : "null"}`}
+          onClick={props.togglecontrastStyle}
+        >
+          Change Contrast
+        </button>{" "}
+        <button
+          id={`${props.isActiveButton ? "buttonStyle" : "null"}`}
+          onClick={props.toggleLtrSpacingStyle}
+        >
+          Spacing ✚
+        </button>
+      </section>
+    </>
+  );
+}
