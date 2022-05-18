@@ -1,60 +1,61 @@
-import React from 'react'
-import Card from 'react-bootstrap/Card'
-import { useState } from 'react'
+import React from "react";
+import Card from "react-bootstrap/Card";
+import { useState } from "react";
 
-export default function CourseCard (props) {
-  const [isActive, setIsActive] = useState(false)
+export default function CourseCard(props) {
+  const [isActive, setIsActive] = useState(false);
 
-  const [isContrast, setIsContrast] = useState(false)
+  const [isContrast, setIsContrast] = useState(false);
 
-  const [isActiveButton, setIsActiveButton] = useState(true)
+  const [isActiveButton, setIsActiveButton] = useState(true);
 
-  const [isLtrSpacingActive, setIsLtrSpacingActive] = useState(false)
+  const [isLtrSpacingActive, setIsLtrSpacingActive] = useState(false);
 
   const toggleDiffStyle = () => {
-    setIsActive(!isActive)
-  }
+    setIsActive(!isActive);
+  };
 
   const togglecontrastStyle = () => {
-    setIsContrast(!isContrast)
-  }
+    setIsContrast(!isContrast);
+  };
 
   const toggleButtonStyle = () => {
-    setIsActiveButton(!isActiveButton)
-  }
+    setIsActiveButton(!isActiveButton);
+  };
 
-  const toggleLtrSpacingStyle = () => setIsLtrSpacingActive(!isLtrSpacingActive)
+  const toggleLtrSpacingStyle = () =>
+    setIsLtrSpacingActive(!isLtrSpacingActive);
 
   return (
     <>
-      <Card id={`${isContrast ? 'contrastStyle' : 'null'}`}>
-        <Card.Body id={`${isActive ? 'diffStyle' : 'null'}`}>
+      <Card id={`${isContrast ? "contrastStyle" : "null"}`}>
+        <Card.Body id={`${isActive ? "diffStyle" : "null"}`}>
           <Card.Title>{props.courseData.courseName}</Card.Title>
-          <Card.Subtitle className='mb-2 text-muted'>
+          <Card.Subtitle className="mb-2 text-muted">
             {props.courseData.instructorName}
           </Card.Subtitle>
           <Card.Text>{props.courseData.courseDescription}</Card.Text>
           <div id="skiplink">
-          <Card.Link href={props.courseData.link}>
-            Link to Details Page
-          </Card.Link>
+            <Card.Link href={props.courseData.link}>
+              Link to Details Page
+            </Card.Link>
           </div>
         </Card.Body>
         <section>
           <button
-            id={`${isActiveButton ? 'buttonStyle' : 'null'}`}
+            id={`${isActiveButton ? "buttonStyle" : "null"}`}
             onClick={toggleDiffStyle}
           >
             Font Size ✚
           </button>
           <button
-            id={`${isActiveButton ? 'buttonStyle' : 'null'}`}
+            id={`${isActiveButton ? "buttonStyle" : "null"}`}
             onClick={togglecontrastStyle}
           >
             Change Contrast
-          </button>{' '}
+          </button>{" "}
           <button
-            id={`${isActiveButton ? 'buttonStyle' : 'null'}`}
+            id={`${isActiveButton ? "buttonStyle" : "null"}`}
             onClick={toggleLtrSpacingStyle}
           >
             Letter Spacing ⬆️
@@ -62,5 +63,5 @@ export default function CourseCard (props) {
         </section>
       </Card>
     </>
-  )
+  );
 }

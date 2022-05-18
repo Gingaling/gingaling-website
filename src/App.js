@@ -200,7 +200,13 @@ export default function App() {
           />
           <Route
             path="/resources"
-            element={<Resources data={RESOURCE_DATA} />}
+            element={
+              <Resources
+                data={RESOURCE_DATA}
+                isFontActive={isFontActive}
+                toggleFont={toggleFont}
+              />
+            }
           />
         </Routes>
       </main>
