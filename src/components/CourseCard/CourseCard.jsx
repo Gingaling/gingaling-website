@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 export default function CourseCard(props) {
   return (
     <>
+    <section id={`${props.isLtrSpacingActive? "LtrSpacingStyle" : "null"}`}>
       <Card id={`${props.isContrast ? "contrastStyle" : "null"}`}>
         <Card.Body id={`${props.isFontActive ? "diffStyle" : "null"}`}>
           <Card.Title>{props.courseData.courseName}</Card.Title>
@@ -18,6 +19,7 @@ export default function CourseCard(props) {
           </div>
         </Card.Body>
       </Card>
+        </section>
     </>
   );
 }
