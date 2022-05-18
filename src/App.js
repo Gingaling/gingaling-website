@@ -10,6 +10,7 @@ import Header from "./components/Header/Header";
 // import SignOut from './components/auth/SignOut'
 // import ChangePassword from './components/auth/ChangePassword'
 import SyllabusPage from "./pages/SyllabusPage/SyllabusPage";
+import SyllabusDetails from "./pages/SyllabusDetails/SyllabusDetails";
 
 export default function App() {
   const [user, setUser] = useState(null);
@@ -71,7 +72,9 @@ export default function App() {
       courseName: "Writing and Composition",
       courseDescription:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: <a href="mailto:thummingbird@ga.edu">Theresa Hummingbird</a>  ,
+      instructorName: (
+        <a href="mailto:thummingbird@ga.edu">Theresa Hummingbird</a>
+      ),
       link: "./Hummingbird",
       policies:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",

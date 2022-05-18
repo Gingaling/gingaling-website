@@ -1,6 +1,6 @@
 import React from "react";
 import CourseCard from "../../components/CourseCard/CourseCard";
-import ToggleButton from "../../components/ToggleButton/ToggleButton";
+// import ToggleButton from "../../components/ToggleButton/ToggleButton";
 
 export default function SyllabusPage(props) {
   console.log("this page");
@@ -22,7 +22,7 @@ export default function SyllabusPage(props) {
   return (
     <>
       {generateCourseCards()}
-      <ToggleButton />
+      {/* <ToggleButton /> */}
     </>
   );
 }
