@@ -3,102 +3,107 @@
 } */
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 #navbar {
-  background-color: #056280;
-  color: #eeeeee;
+	background-color: #056280;
+	color: #eeeeee;
 }
 
 body {
-  background-color: #eeeeee;
+	background-color: #eeeeee;
 }
 
 #logo {
-  max-height: 50px;
-  padding-right: 10px;
+	max-height: 50px;
+	padding-right: 10px;
 }
 
 #contrastStyle {
-  color: #e60000;
-  background-color: #ffff47;
-  font-size: 20px;
-  outline-width: 16px;
+	color: #e60000;
+	background-color: #ffff47;
+	font-size: 20px;
+	outline-width: 16px;
 }
 
 #diffStyle {
-  font-size: 30px;
+	font-size: 30px;
 }
 
 #LtrSpacingStyle {
-  letter-spacing: 2px;
+	letter-spacing: 2px;
 }
 
 section {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  width: 500px;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	width: 500px;
 }
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
-  width: 600px;
-  padding: 25px;
-  margin: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 600px;
+	padding: 25px;
+	margin: 20px;
 }
 
 #flex {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 button {
-  align-self: center;
-  max-height: 100px;
-  width: 5em;
+	align-self: center;
+	max-height: 100px;
+	width: 5em;
 }
 
 #buttonStyle {
-  max-width: 30%;
-  border-radius: 40px;
-  color: white;
-  background-color: black;
+	max-width: 30%;
+	border-radius: 40px;
+	color: white;
+	background-color: black;
 }
 
 a {
-  color: #056280;
+	color: #056280;
 }
 
 a:focus,
 a:hover {
-  text-decoration: underline;
-  border: 4px solid #056280;
+	text-decoration: underline;
+	border: 4px solid #056280;
 }
 
 #skiplink a {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
 }
 
 #skiplink a:focus {
-  position: static;
-  top: auto;
-  width: auto;
-  height: auto;
+	position: static;
+	top: auto;
+	width: auto;
+	height: auto;
 }
 
 .buttonSection {
-  position: fixed;
-  /* top: 0;
-  width: 100%;
-  z-index: 100;
-  margin-top: 500px;
-  margin-left: 600px; */
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	margin-top: 80px;
+	/* margin-left: 600px; */
 }
+
+/* .buttonSection {
+	position: sticky;
+	margin: 20px;
+} */
