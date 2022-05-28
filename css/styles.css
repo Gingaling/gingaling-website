@@ -3134,12 +3134,14 @@ fieldset:disabled .btn {
 
 .btn-primary {
 	color: #fff;
-	background-color: #1d809f;
-	border-color: #1d809f;
+	font-size: larger;
+	border-radius: 70px;
+	background-color: #7f5c16;
+	border-color: #cec79b;
 }
 .btn-primary:hover {
 	color: #fff;
-	background-color: #196d87;
+	background-color: #e3901b;
 	border-color: #17667f;
 }
 .btn-check:focus + .btn-primary,
@@ -8207,7 +8209,7 @@ fieldset:disabled .btn {
 
 .bg-light {
 	--bs-bg-opacity: 1;
-	background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+	background-color: rgba(225, 83, 97, 0.5);
 }
 
 .bg-dark {
@@ -11715,7 +11717,7 @@ html {
 	height: 100%;
 	transition: all 0.4s ease 0s;
 	transform: translateX(250px);
-	background: #1d809f;
+	background: rgba(225, 83, 97, 0.7);
 	border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -11875,6 +11877,10 @@ footer.footer .social-link:hover {
 	margin: 0;
 	padding: 0;
 }
+
+#splash-btn {
+}
+
 @media (min-width: 992px) {
 	.masthead {
 		height: 100vh;
