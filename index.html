@@ -7,21 +7,28 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="author" content="Ging M. Louie" />
     <title>Ging's Website</title>
-    <!-- Favicon-->
+
+<!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
+
+<!-- Font Awesome icons (free version)-->
     <script
       src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Simple line icons-->
+
+<!-- Simple line icons-->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
       rel="stylesheet"
     />
-    <!-- Google fonts-->
+
+<!-- Google fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
       rel="stylesheet"
@@ -30,7 +37,8 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
-  <body id="page-top">
+
+    <body id="page-top">
     <!-- Navigation-->
     <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
     <nav id="sidebar-wrapper">
@@ -38,11 +46,11 @@
         <li class="sidebar-brand"><a href="#page-top">Ging Louie (HOME)</a></li>
         <li class="sidebar-nav-item"><a href="#about">About</a></li>
         <li class="sidebar-nav-item"><a href="#portfolio">My Portfolio</a></li>
-        <li class="sidebar-nav-item">
+        <!-- <li class="sidebar-nav-item">
           <a href="#activities">My Activities</a>
         </li>
-        <li class="sidebar-nav-item"><a href="#blog">My Blog</a></li>
-        <li class="sidebar-nav-item"><a href="#contact">Contact Me</a></li>
+        <li class="sidebar-nav-item"><a href="#blog">My Blog</a></li> -->
+        <li class="sidebar-nav-item"><a href="#contact">My Contact Information</a></li>
       </ul>
     </nav>
     <!-- Header-->
@@ -69,11 +77,11 @@
       </div>
     </header>
     <!-- About-->
-    <section class="content-section bg-light" id="about">
+      <section style= "color: white" class="content-section" id="about">
       <div class="container px-4 px-lg-5">
-        <div class="content-section-heading">
-          <h3 style="text-align: center" "text-secondary mb-0">Ging Louie</h3>
-          <h2 style="text-align: center" class="mb-5">At a Glance</h2>
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Ging Louie</h3>
+          <h2 class="mb-5">At a Glance</h2>
         </div>
       </div>
       <div class="container px-4 px-lg-5 text-center">
@@ -84,10 +92,11 @@
             </h3>
             <p style="font-weight: 500"> 
               I am a Spring 2022 graduate of General Assembly's Software Engineering Immersive Program. I am a former attorney and human resources professional. It has been a wild ride but I am very happy with my decision to make the tech pivot.<br><br>
-(You can download my resumé <a href="assets/user/G. Louie Resume (2022-05-25) v.3.docx">here</a>.)<br><br>
+(You can download my resumé <a style="color: rgb(220, 229, 119)" href="assets/user/G. Louie Resume (2022-05-25) v.3.docx">here</a>.)<br><br>
 <b>Fluency:</b> Javascript, React, Python, NodeJS, Mongoose, Express, Postman, Mongodb, Django, Heroku, Netlify, CSS, HTML<br>
 <b>Familiarity:</b> Axios, Bootstrap, Grid
             </p> <br> <br>
+      
              <div class="row gx-4 gx-lg-5">
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
              <a style="text-decoration: none" href="#portfolio">
@@ -113,7 +122,7 @@
             </span>
             <h4><strong>My Blog</strong></h4></a>
             <p class="text-faded mb-0">
-              NOTE: section under construction
+              NOTE: section under constructio<i class="fa-solid fa-worm"></i>
               <i class="fas fa-heart"></i>
 
             </p>
@@ -128,166 +137,299 @@
           </div>
         </div>
       </div>
+      </div>
+      <br><br>
     </section>
+<!-- Ging Louie - At a Glance (end) -->
   
-    <!-- Portfolio-->
-    <section class="content-section" id="portfolio">
+<!-- Portfolio-->
+    <section style="background-color:rgb(53, 101, 94)" class="content-section" id="portfolio">
       <div class="container px-4 px-lg-5">
         <div class="content-section-heading text-center">
-          <h3 class="text-secondary mb-0">My Portfolio</h3>
+          <br>
+          <h3  class="text-secondary mb-0">My Portfolio</h3>
           <h2 class="mb-5">Recent Projects</h2>
         </div>
         <div class="row gx-0">
+
+<!-- Kitchen Counter (start) -->          
           <div class="col-lg-6">
-            <a style="border: solid 10px black" class="portfolio-item" href="#!">
+            <a style="border: 10px solid rgb(20, 5, 72)" class="portfolio-item" href="#!">
               <div class="caption">
                 <div class="caption-content">
-                  <div class="h2">Kitchen Counter</div>
-                  <p class="mb-0">
-                    A yellow pencil with envelopes on a clean, blue backdrop!
+                  <div style="margin-top:  5rem" class="h2">Kitchen Counter</div>
+                  <p style="font-size: 15px" class="mb-0">
+                    An inventory of your groceries for a more efficient shopping experience...<br /><br />
                   </p>
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myKitchenCounterModal">For more information</button>
                 </div>
               </div>
+              <div style="background-color: coral" class="d-flex bg-danger container">
+        <div class="bg-success p-2 border flex-fill">
               <img
                 class="img-fluid"
                 src="assets/img/portfolio-1.jpg"
                 alt="..."
               />
+              </div>
+              </div>
             </a>
           </div>
+
+<!-- The Modal - Kitchen Counter -->
+<div class="modal" id="myKitchenCounterModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div style="background-color: rgb(216, 150, 161)"" class="modal-header">
+        <h4 class="modal-title">
+           <a href="https://tiny-pixie-453266.netlify.app/"  target="_blank">
+       Project: Kitchen Counter</a></h4>
+        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <b><i>Kitchen Counter</b></i> is a food inventory application. At a minimum, it tracks what foods a user currently has in their cupboard or refrigerator. It also permits a user to record what they eat. With these two pieces of information the user will know when they are running low on a food item. Their food shopping will thus be more efficient and will eliminate those trips to the supermarket because one has forgotten that one product they meant to buy.<br/><br/>
+        <b>Technologies employed:</b> <br/>Javascript, React.js, Mongoose, Node.js, Express, MongoDB, Heroku, Netlify, HTML5, CSS and Animate.css<br/>
+        <b>Github repositories:</b><br/><a style="color:black" href="https://github.com/Gingaling/eat-n-shop-frontend" target="_blank">https://github.com/Gingaling/eat-n-shop-frontend (frontend)</a>;<br/><a style="color:black" href="https://github.com/Gingaling/eat-n-shop-api" target="_blank" >https://github.com/Gingaling/eat-n-shop-api (backend)</a>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Kitchen Counter (end) -->
+
+<!-- Book Roulette (start) -->
           <div class="col-lg-6">
-            <a style="border: solid 10px black" class="portfolio-item" href="#!">
+            <a style="border: 10px solid rgb(20, 5, 42)" class="portfolio-item" href="#!">
               <div class="caption">
                 <div class="caption-content">
-                  <div class="h2">Ice Cream</div>
-                  <p class="mb-0">
-                    A dark blue background with a colored pencil, a clip, and a
-                    tiny ice cream cone!
+                  <div style="margin-top:  5rem" class="h2">Book Roulette</div>
+                  <p style="font-size: 15px" class="mb-3">
+                    Do you feel like reading a book but don't know what to read? Book Roulette to the rescue.
                   </p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myBookRouletteModal">For more information</button>
                 </div>
               </div>
+              <div class="d-flex bg-danger container">
+        <div class="bg-success p-2 border flex-fill">
               <img
                 class="img-fluid"
                 src="assets/img/portfolio-2.jpg"
                 alt="..."
               />
+              </div>
+              </div>
             </a>
           </div>
+
+<!-- The Modal - Book Roulette -->
+<div class="modal" id="myBookRouletteModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div style="background-color: rgb(216, 150, 161)" class="modal-header">
+        <h4 class="modal-title">
+           <a href="https://book-roulette.netlify.app/" target="_blank">
+       Project: Book Roulette</a></h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <b><i>Book Roulette</b></i> is a book recommendation app that generates a random book to users based on genre preferences. Each user has the capability to add books that they would recommend to fellow users as well.<br/><br/>
+
+        <b>Technologies employed:</b> Javascript, React.js, Mongoose, Node.js, Express, MongoDB, Heroku, Netlify, Axios, HTML5 and CSS<br/>
+        <b>Github repositories:</b><br/><a style="color:black" href="https://github.com/GeMMS-Project-2/book-roulette-frontend" target="_blank"> https://github.com/GeMMS-Project-2/book-roulette-frontend (frontend)</a> ;<br/><a style="color:black" href="https://github.com/GeMMS-Project-2/book-roulette-backend" target="_blank">https://github.com/GeMMS-Project-2/book-roulette-backend (backend)</a>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Book Roulette (end) -->
+
+<!-- A Trio of Cats (start) -->
           <div class="col-lg-6">
-            <a style="border: solid 10px black" class="portfolio-item" href="#!">
+            <a style="border: 9px solid rgb(20, 5, 42)" class="portfolio-item" href="#!">
               <div class="caption">
                 <div class="caption-content">
-                  <div class="h2">Strawberries</div>
-                  <p class="mb-0">
-                    Strawberries are such a tasty snack, especially with a
-                    little sugar on top!
+                  <div style="margin-top:  5rem" class="h2">A Trio of Cats</div>
+                  <p style="font-size: 15px" class="mb-0">
+                    Are you a cat person? Then this random cat image generator is just your thing.
                   </p>
+                  <br>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myATrioOfCatsModal">For more information</button>
                 </div>
               </div>
+              <div class="d-flex bg-danger container">
+        <div class="bg-success p-2 border flex-fill">
               <img
                 class="img-fluid"
                 src="assets/img/portfolio-3.jpg"
                 alt="..."
               />
+              </div>
+            </div>
             </a>
           </div>
+
+<!-- The Modal - A Trio of Cats -->
+<div class="modal" id="myATrioOfCatsModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div style="background-color: rgb(216, 150, 161)"" class="modal-header">
+        <h4 class="modal-title">
+           <a href=" https://xenodochial-heisenberg-1997c1.netlify.app/" target="_blank">
+       Project: A Trio of Cats</a></h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <b><i>A Trio of Cats</b></i> is a single-page application created with ReactJS and styled utilizing Flexbox. The app appropriately uses the useState hook, a new feature in the most recent React upgrade. The app incorporates the use of a fetch operation to a third party API and uses retrieved data. In this case, it was random cat images. Further the app demonstrates the use of calling a component with state via an onClick event.<br/><br/>
+
+        <b>Technologies employed:</b><br/>Javascript, React.js (including React Router and ReactDOM), JSX, vanilla Javascript, Flexbox and Netlify<br/>
+        <b>Github repository:</b><br/>
+        <a style="color:black" href="https://github.com/Gingaling/a-trio-of-cats-3" target=""_blank">https://github.com/Gingaling/a-trio-of-cats-3</a>
+        </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- A Trio of Cats (end) -->
+
+<!-- An Apple a Day for Your Worm (start) -->
           <div class="col-lg-6">
-            <a style="border: solid 10px black" class="portfolio-item" href="#!">
+            <a style="border: 10px solid rgb(20, 5, 42)" class="portfolio-item" href="#!">
               <div class="caption">
                 <div class="caption-content">
-                  <div class="h2">Workspace</div>
-                  <p class="mb-0">
-                    A yellow workspace with some scissors, pencils, and other
-                    objects.
+                  <div style="margin-top:  5rem" class="h2">An Apple a Day for Your Worm</div>
+                  <p style="font-size: 15px" class="mb-0">
+                    A modern version of the '90s era hand-held game toy, Tamagatchi.
                   </p>
+                  <br>
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myAnAppleADayForYourWormModal">For more information</button>
                 </div>
               </div>
-              <img
-                class="img-fluid"
+              <div class="d-flex bg-danger container">
+        <div  class="bg-success p-2 border flex-fill">
+              <img           class="img-fluid"
                 src="assets/img/portfolio-4.jpg"
                 alt="..."
               />
+              </div>
+            </div>
             </a>
           </div>
+
+<!-- The Modal - An Apple A Day For Your Worm -->
+<div class="modal" id="myAnAppleADayForYourWormModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div style="background-color: rgb(216, 150, 161)"" class="modal-header">
+        <h4 class="modal-title">
+           <a href=" https://gingaling.github.io/VermiCare2/" target="_blank">
+       Project: An Apple a Day for Your Worm</a></h4>
+        <button style="background-color: rgb(216, 150, 161)" type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <b><i>An Apple a Day for Your Worm</b></i> is a contemporary and whimsical take on the classic handheld digital pet Tamagotchi, popular in the late 1990's and early 2000's.<br/><br/>
+
+                  <b>Technologies employed:</b> Javascript, JQuery, CSS, HTML and Animate.css<br/>
+                   <b>Github repository:<br/></b><a style="color:black" href="https://github.com/Gingaling/VermiCare2" target="_blank"> https://github.com/Gingaling/VermiCare2</a>
+
         </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
       </div>
-    </section>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<br>
+<br>
+</section>
+<!-- An Apple a Day for Your Worm (end) -->
 
-    <!-- Activities -->
-    <section class="callout">
-      <div class="container px-4 px-lg-5 text-center">
-        <h2 class="mx-auto mb-5">
-          Welcome to
-          <em>your</em>
-          next website!
-        </h2>
-        <a
-          class="btn btn-primary btn-xl"
-          href="https://startbootstrap.com/theme/stylish-portfolio/"
-        >
-          Download Now!
-        </a>
-      </div>
-    </section>
-
-
-        <!-- Blog -->
-    <section
-      class="content-section bg-primary text-white text-center"
-      id="services"
-    >
+<!-- Activities (start) -->
+  <!-- <section style="background-color:rgb(222, 234, 232)" class="activities">
       <div class="container px-4 px-lg-5">
-        <div class="content-section-heading">
-          <h3 class="text-secondary mb-0">Services</h3>
-          <h2 class="mb-5">What We Offer</h2>
+        <div class="content-section-heading text-center">
+          <br>
+          <h3  class="text-secondary mb-0">My Activities</h3>
+          <h2>My Interests Outside Coding</h2>
         </div>
-        <div class="row gx-4 gx-lg-5">
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-screen-smartphone"></i>
-            </span>
-            <h4><strong>Responsive</strong></h4>
-            <p class="text-faded mb-0">Looks great on any screen size!</p>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-pencil"></i>
-            </span>
-            <h4><strong>Redesigned</strong></h4>
-            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 5.</p>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-like"></i>
-            </span>
-            <h4><strong>Favorited</strong></h4>
-            <p class="text-faded mb-0">
-              Millions of users
-              <i class="fas fa-heart"></i>
-              Start Bootstrap!
-            </p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
-            </span>
-            <h4><strong>Question</strong></h4>
-            <p class="text-faded mb-0">I mustache you a question...</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action-->
-    <section class="content-section bg-primary text-white">
+      
+       <div class="content-section" id="activities">
+  
       <div class="container px-4 px-lg-5 text-center">
-        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-        <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-        <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+        <h3  mb-5">
+          This section under construction.
+        </h3>
       </div>
-    </section>
+      </div>
+    </section> -->
+<!-- Activities (end) -->
+
+    <!-- My Blog (start) -->
+     <!-- <section style="background-color: rgb(133, 144, 206)" class="content-section" id="blog">
+      <div class="container px-4 px-lg-5">
+        <div class="content-section-heading text-center">
+          <br>
+          <h3 class="text-secondary mb-0">My Blog</h3>
+          <h2 class="mb-5">Musings and Observations</h2>
+          </div>
+      <div class="content-section text-black">
+      <div class="container px-4 px-lg-5 text-center">
+        <h2 class="mb-4"> This section under construction.</h2>
+      </div>
+      </div>
+    </section> -->
+<!-- My Blog (end) -->
+
+<!-- My Contact Information (start) -->
+     <section style="background-color: rgb(122, 36, 103)" class="content-section" id="contact">
+      <div class="container px-4 px-lg-5">
+        <div class="content-section-heading text-center">
+          <br>
+          <h3 class="text-secondary mb-0">My Contact Information</h3>
+          <h2 class="mb-5">My Attention</h2>
+            <p style="color: white" class="lead mb-5">
+              I hope you enjoyed visiting my site. It is most certainly a work in progress. Any and all comments, pieces of advice, etc. would be appreciated.<br/>
+              <br/>
+              I may be reached at <a href="mailto:ging@ginglouie.com"><b><i>ging@ginglouie.com</b></i>.</a> Alternatively, you can message me through my linkdin handle. (Click on the icon below.)
+            </p>
+              </div>
+              <div class="row gx-0">
+              </section>
+<!-- My Contact Information (end) -->
+
     <!-- Map-->
-    <div class="map" id="contact">
+    <!-- <div class="map" id="contact">
       <iframe
         src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"
       ></iframe>
@@ -297,28 +439,32 @@
           href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Ging's +Hood,+Sutter+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"
         ></a>
       </small>
-    </div>
+    </div> -->
+
     <!-- Footer-->
     <footer class="footer text-center">
       <div class="container px-4 px-lg-5">
         <ul class="list-inline mb-5">
          <li class="list-inline-item">
-            <a style="background-color:rgb(141, 113, 29)" class="social-link rounded-circle text-white mr-3" href="#!">
+            <a style="background-color:rgb(141, 113, 29)" class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/ging-m-louie/">
               <i class="icon-social-linkedin"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a style="background-color:chocolate" class="social-link rounded-circle text-white" href="#!">
+            <a style="background-color:chocolate" class="social-link rounded-circle text-white" href="https://github.com/Gingaling?tab=repositories">
               <i class="icon-social-github"></i>
             </a>
           </li>
         </ul>
         <p class="text-muted small mb-0">Copyright &copy; www.ginglouie.com 2022</p>
       </div>
+
     </footer>
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fas fa-angle-up"></i>
+    <a href="#page-top">
+      <div style="z-index: 1" class="scroll-to-top rounded">
+        <i class="fas fa-angle-up"></i>
+      </div>
     </a>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
