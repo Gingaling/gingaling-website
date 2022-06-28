@@ -1,17 +1,19 @@
 import "./App.css";
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-
-import Header from "./components/Header/Header";
-
+import { useAuth0 } from '@auth0/auth0-react';
+import NavBar from './components/NavBar';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import Loading from './components/Loading';
 import SyllabusPage from "./pages/SyllabusPage/SyllabusPage";
 import ToggleButton from "../src/components/ToggleButton/ToggleButton";
-
+import AuthNav from './components/Auth-Nav';
 import Resources from "./pages/Resources/Resources";
 
 export default function App() {
-  const [user, setUser] = useState(null);
-  const [msgAlerts, setMsgAlerts] = useState([]);
+  // const [user, setUser] = useState(null);
+  // const [msgAlerts, setMsgAlerts] = useState([]);
   const [isFontActive, setIsFontActive] = useState(false);
   const [isContrast, setIsContrast] = useState(false);
   const [isActiveButton, setIsActiveButton] = useState(true);
@@ -155,11 +157,16 @@ export default function App() {
     },
   ];
 
+	const { isLoading } = useAuth0();
+	if (isLoading) {
+		return <Loading />;
+	}
+
   return (
     <>
-      <Header user={user} />
 
-      <main className="container">
+      <NavBar />
+      <main >
         <div>
           <ToggleButton
             toggleFont={toggleFont}
@@ -168,9 +175,27 @@ export default function App() {
             toggleLtrSpacingStyle={toggleLtrSpacingStyle}
           />
         </div>
+        	<div id="app" className="d-flex flex-column h-100">
+				{/* <div className="container flex-grow-1"> */}
         <br></br>
         <br></br>
         <Routes>
+        	<Route
+            path="/"
+            element={
+              <Home 
+                isFontActive={isFontActive}
+                toggleFont={toggleFont}
+                togglecontrastStyle={togglecontrastStyle}
+                toggleButtonStyle={toggleButtonStyle}
+                toggleLtrSpacingStyle={toggleLtrSpacingStyle}
+                isContrast={isContrast}
+                isActiveButton={isActiveButton}
+                isLtrSpacingActive={isLtrSpacingActive}
+              />
+            }
+          />
+					<Route path="/profile" element=<Profile /> />
           <Route
             path="/syllabus"
             element={
@@ -198,6 +223,8 @@ export default function App() {
             }
           />
         </Routes>
+        </div>
+      {/* </div> */}
       </main>
     </>
   );

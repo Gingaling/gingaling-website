@@ -6,21 +6,21 @@ export default function ButtonToggle(props) {
           id={`${props.isActiveButton ? "buttonStyle" : "null"}`}
           onClick={props.toggleFont}
         >
-          Font Size ✚
+          <b>Font Size ✚</b>
         </button>
         <br></br>
         <button
           id={`${props.isActiveButton ? "buttonStyle" : "null"}`}
           onClick={props.togglecontrastStyle}
         >
-          Change Contrast
+          <b>Change Contrast</b>
         </button>{" "}
         <br></br>
         <button
           id={`${props.isActiveButton ? "buttonStyle" : "null"}`}
           onClick={props.toggleLtrSpacingStyle}
         >
-          Spacing ✚
+          <b>Spacing ✚</b>
         </button>
       </section>
     </>
