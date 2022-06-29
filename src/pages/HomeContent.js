@@ -21,13 +21,7 @@ export default function HomeContent(props) {
 		<div id="PortalParts" className="row">
 			<div className="col-md-5 mb-4">
 				<h4 className="mb-3">
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						href="">
-						<i className="fas fa-link mr-2" />
-						Retrieve course syllabi
-					</a>
+					Retrieve course syllabi
 				</h4>
 				<p>
 					Auth0 supports social providers as Facebook, Twitter, Instagram and
@@ -40,13 +34,7 @@ export default function HomeContent(props) {
 
 			<div className="col-md-5 mb-4">
 				<h4 className="mb-3">
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						href="">
-						<i className="fas fa-link mr-2" />
-						Check course grades and progress
-					</a>
+					Check course grades and progress
 				</h4>
 				<p>
 					Add an extra layer of security by enabling Multi-factor
@@ -60,13 +48,7 @@ export default function HomeContent(props) {
 		<div className="row">
 			<div className="col-md-5 mb-4">
 				<h4 className="mb-3">
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						href="">
-						<i className="fas fa-link mr-2" />
-						Contact course instructors and teaching assistants
-					</a>
+					Contact course instructors and teaching assistants
 				</h4>
 				<p>
 					Auth0 can detect anomalies and stop malicious attempts to access your
@@ -79,13 +61,7 @@ export default function HomeContent(props) {
 
 			<div className="col-md-5 mb-4">
 				<h4 className="mb-3">
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						href="">
-						<i className="fas fa-link mr-2" />
-						Access resources concerning internet accessibility
-					</a>
+					Access resources concerning internet accessibility
 				</h4>
 				<p>
 					Rules are JavaScript functions that execute when a user authenticates
