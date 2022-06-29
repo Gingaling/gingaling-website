@@ -25,5 +25,9 @@ export default function SyllabusPage(props) {
     return "<h1>No Data</h1>";
   }
 
-  return <>{generateCourseCards()}</>;
+  return <>
+  <br></br>  <br></br> 
+    <h1 id="MySyllabi"> My Syllabi</h1>
+    {generateCourseCards()}
+    </>;
 }

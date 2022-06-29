@@ -3,12 +3,11 @@ import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { useAuth0 } from '@auth0/auth0-react';
 import NavBar from './components/NavBar';
-import Home from './pages/Home';
+import HomeContent from './pages/HomeContent';
 import Profile from './pages/Profile';
 import Loading from './components/Loading';
 import SyllabusPage from "./pages/SyllabusPage/SyllabusPage";
 import ToggleButton from "../src/components/ToggleButton/ToggleButton";
-import AuthNav from './components/Auth-Nav';
 import Resources from "./pages/Resources/Resources";
 
 export default function App() {
@@ -36,78 +35,53 @@ export default function App() {
 
   const DUMMY_DATA = [
     {
-      courseName: "Accessibility in the Modern Age",
+      courseName: "GS-395: Accessibility in the Modern Age",
       courseDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: <a href="mailto:hhoover@ga.edu">Herbert Hoover</a>,
-      link: "./Hoover",
-      policies:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+        "Dummy text...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: 
+      <a href="mailto:adunbledore@ga.edu">Instructor: Albus Dunbledore</a>,
     },
     {
-      courseName: "Science",
+      courseName: "HIST-210: English Resistance of Roman Imperialism",
       courseDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: <a href="mailto:mmagdalene@ga.edu">Mary Magdalene</a>,
-      link: "./Magdalene",
-      policies:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+        "Dummy text...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: <a href="mailto:mmcgonagall@ga.edu">Instructor: Minerva McGonagall</a>,
     },
     {
       courseName: "Math",
       courseDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: <a href="mailto:aeinstein@ga.edu">Albert Einstein</a>,
-      link: "./Einstein",
-      policies:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-    },
+        "Dummy text...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: <a href="mailto:aeinstein@ga.edu">Instructor: Albert Einstein</a>,
+     },
     {
       courseName: "Crafts",
       courseDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: <a href="mailto: mstewart@ga.edu">Martha Stewart</a>,
-      link: "./Stewart",
-      policies:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+        "Dummy text...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: <a href="mailto: mstewart@ga.edu">Instructor: Martha Stewart</a>,
     },
     {
       courseName: "Anthropology",
       courseDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: <a href="mailto:gclooney@ga.edu">George Clooney</a>,
-      link: "./Clooney",
-      policies:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+        "Dummy text...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: <a href="mailto:gclooney@ga.edu">Instructor: George Clooney</a>,
     },
     {
       courseName: "Writing and Composition",
       courseDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: (
-        <a href="mailto:thummingbird@ga.edu">Theresa Hummingbird</a>
-      ),
-      link: "./Hummingbird",
-      policies:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+        "Dummy text...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: <a href="mailto:thummingbird@ga.edu">Instructor: Theresa Hummingbird</a>
     },
     {
       courseName: "This Class",
       courseDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: <a href="mailto:djohnson@ga.edu">Dwayne Johnson</a>,
-      link: "./Johnson",
-      policies:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+        "Dummy text...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: <a href="mailto:djohnson@ga.edu">Instructor: Dwayne Johnson</a>,
     },
     {
       courseName: "This Class Also",
       courseDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
-      instructorName: <a href="mailto:hpotter@ga.edu">Harry Potter</a>,
-      link: "./Potter",
-      policies:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+        "Dummy text...Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nisi consequatur ab facilis modi ipsum, dolores dolorem repudiandae reiciendis unde magnam quo asperiores delectus corrupti repellat provident placeat, omnis error",
+      instructorName: <a href="mailto:hpotter@ga.edu">Instructor: Harry Potter</a>,
     },
   ];
 
@@ -183,7 +157,7 @@ export default function App() {
         	<Route
             path="/"
             element={
-              <Home 
+              <HomeContent
                 isFontActive={isFontActive}
                 toggleFont={toggleFont}
                 togglecontrastStyle={togglecontrastStyle}
@@ -195,7 +169,13 @@ export default function App() {
               />
             }
           />
-					<Route path="/profile" element=<Profile /> />
+					<Route
+            path="/profile"
+            element={
+              <Profile
+              />
+            }
+          />
           <Route
             path="/syllabus"
             element={

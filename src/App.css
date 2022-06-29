@@ -2,9 +2,10 @@
 	text-align: center;
 }
 
-main {
-	background-color: rgb(241, 233, 233);
-}
+/* .nav-container {
+	line-height: 100px;
+	height: 100px;
+} */
 
 section.buttonSection {
 	flex-direction: row;
@@ -22,10 +23,15 @@ section.buttonSection {
 	background-color: rgb(8, 49, 33);
 }
 
+#MySyllabi {
+	text-align: center;
+}
+
 #NavBarStyle {
+	flex-direction: row;
+	/* display: inline-block; */
 	margin-left: 0;
-	height: 175px;
-	display: block;
+	height: 125px;
 	color: blue;
 	align-items: left;
 	font-size: 20px;
@@ -33,6 +39,14 @@ section.buttonSection {
 	gap: 10px;
 	margin-left: 0;
 	padding: 10px;
+}
+
+#logo {
+	margin-left: 29px;
+	line-height: 100px;
+	padding: 0;
+	width: 75px;
+	height: 100px;
 }
 
 .next-steps {
@@ -45,6 +59,10 @@ img.userImg {
 
 #ProfileStyle {
 	margin: 80px 20px 20px 20px;
+}
+
+.CardColor {
+	background-color: rgb(39, 39, 180);
 }
 
 @media (prefers-reduced-motion: no-preference) {

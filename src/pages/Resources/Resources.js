@@ -12,5 +12,8 @@ export default function Resources(props) {
     return "<h1>No Data</h1>";
   }
 
-  return <>{generateResourceCards()}</>;
+  return <>
+    <br></br>  <br></br> 
+    <h1 id="MySyllabi">Accessibility Resources</h1>{generateResourceCards()}</>
+ 
 }

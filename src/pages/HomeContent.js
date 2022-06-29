@@ -4,10 +4,13 @@ export default function HomeContent(props) {
 
 	return (
 	<>
+	<div id={`${props.isContrast ? "contrastStyle" : "null"}`}>
+	<div id={`${props.isLtrSpacingActive ? 'LtrSpacingStyle' : 'null'}`}>
+	<div id={`${props.isFontActive ? "diffStyle" : "null"}`}>
 	<div className="next-steps">
 		<h1
 			className="my-5 text-center"
-			id={`${props.isLtrSpacingActive ? 'LtrSpacingStyle' : 'null'}`}>
+			>
 			<b>
 				Welcome to the<br />GA University Student Portal
 			</b>
@@ -17,15 +20,15 @@ export default function HomeContent(props) {
 		</h3>
 		<div id="PortalParts" className="row">
 			<div className="col-md-5 mb-4">
-				<h6 className="mb-3">
+				<h4 className="mb-3">
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
-						href="https://auth0.com/docs/connections">
+						href="">
 						<i className="fas fa-link mr-2" />
 						Retrieve course syllabi
 					</a>
-				</h6>
+				</h4>
 				<p>
 					Auth0 supports social providers as Facebook, Twitter, Instagram and
 					100+, Enterprise providers as Microsoft Office 365, Google Apps,
@@ -36,15 +39,15 @@ export default function HomeContent(props) {
 			<div className="col-md" />
 
 			<div className="col-md-5 mb-4">
-				<h6 className="mb-3">
+				<h4 className="mb-3">
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
-						href="https://auth0.com/docs/multifactor-authentication">
+						href="">
 						<i className="fas fa-link mr-2" />
 						Check course grades and progress
 					</a>
-				</h6>
+				</h4>
 				<p>
 					Add an extra layer of security by enabling Multi-factor
 					Authentication, requiring your users to provide more than one piece of
@@ -56,15 +59,15 @@ export default function HomeContent(props) {
 
 		<div className="row">
 			<div className="col-md-5 mb-4">
-				<h6 className="mb-3">
+				<h4 className="mb-3">
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
-						href="https://auth0.com/docs/anomaly-detection">
+						href="">
 						<i className="fas fa-link mr-2" />
 						Contact course instructors and teaching assistants
 					</a>
-				</h6>
+				</h4>
 				<p>
 					Auth0 can detect anomalies and stop malicious attempts to access your
 					application. Anomaly detection can alert you and your users of
@@ -75,15 +78,15 @@ export default function HomeContent(props) {
 			<div className="col-md" />
 
 			<div className="col-md-5 mb-4">
-				<h6 className="mb-3">
+				<h4 className="mb-3">
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
-						href="https://auth0.com/docs/rules">
+						href="">
 						<i className="fas fa-link mr-2" />
 						Access resources concerning internet accessibility
 					</a>
-				</h6>
+				</h4>
 				<p>
 					Rules are JavaScript functions that execute when a user authenticates
 					to your application. They run once the authentication process is
@@ -92,7 +95,10 @@ export default function HomeContent(props) {
 				</p>
 			</div>
 		</div>
-	</div>;
+	</div>
+	</div>
+	</div>
+	</div>
 	</>
  );
 }

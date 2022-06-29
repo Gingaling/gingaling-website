@@ -6,44 +6,42 @@ import AuthNav from './Auth-Nav';
 const NavBar = () => {
 	return (
 		<div className="nav-container bg-primary">
-			<nav
-				id="NavBarStyle"
-				className="navbar navbar-expand-md navbar-light bg-light bg-primary">
-				<div className="container">
-					<img
-						class="userImg"
-						alt=""
-						id="logo"
-						src="https://i.imgur.com/2tmJku5.png"
-					/>
+			<nav className="navbar navbar-expand-md bg-light ">
+				<img
+					class="userImg"
+					alt=""
+					id="logo"
+					src="https://i.imgur.com/2tmJku5.png"
+				/>
+				<div id="NavBarStyle" className="container">
 					<div className="navbar-nav mr-auto">
 						<NavLink
 							to="/"
 							exact
 							className="nav-link"
 							activeClassName="router-link-exact-active">
-							<b>Home</b>
+							<b>| Home |</b>
 						</NavLink>
 						<NavLink
 							to="/profile"
 							exact
 							className="nav-link"
 							activeClassName="router-link-exact-active">
-							<b>Profile</b>
+							<b>| Profile |</b>
 						</NavLink>
 						<NavLink
 							to="/syllabus"
 							exact
 							className="nav-link"
 							activeClassName="router-link-exact-active">
-							<b>Syllabi</b>
+							<b>| My Syllabi |</b>
 						</NavLink>
 						<NavLink
 							to="/resources"
 							exact
 							className="nav-link"
 							activeClassName="router-link-exact-active">
-							<b>Resources</b>
+							<b>| Resources |</b>
 						</NavLink>
 					</div>;
 					<AuthNav />
