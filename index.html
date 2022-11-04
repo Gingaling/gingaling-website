@@ -46,6 +46,7 @@
         <li class="sidebar-brand"><a href="#page-top">Ging Louie (HOME)</a></li>
         <li class="sidebar-nav-item"><a href="#about">About</a></li>
         <li class="sidebar-nav-item"><a href="#portfolio">My Portfolio</a></li>
+         <li class="sidebar-nav-item"><a href="#blog">My Articles</a></li>
         <!-- <li class="sidebar-nav-item">
           <a href="#activities">My Activities</a>
         </li>
@@ -77,9 +78,9 @@
             <p style="font-weight: 500"> 
               I am a Spring 2022 graduate of General Assembly's Software Engineering Immersive Program. I am a former attorney and human resources professional. It has been a wild ride but I am very happy with my decision to make the tech pivot.<br><br>
 (You can download my resumé <a style="color: rgb(220, 229, 119)" href="/assets/user/G. Louie Resume (2022-07-20) v.3.00 (FINAL).pdf">here</a>.)<br><br>
-<b><em>FLUENCY:</em></b>   Javascript, React, Python, NodeJS, Mongoose, Express, Postman, Mongodb, Django, Heroku, Netlify, CSS, HTML<br><br>
-<b><em>FAMILIARITY:</em></b>   Axios, Bootstrap, Grid<br><br>
-<b><em>CERTIFICATIONS:</em></b>   Aviatrix Certified Engineer Multi-Cloud Networking Associate (#2022-17612); HackerRank Javascript (Basic) Skills Assessment Certificate (ID: 0AD673DE7EF6)
+<b><em>FLUENCY:</em></b><br/>Javascript, React, Python, NodeJS, Mongoose, Express, Postman, Mongodb, Django, Heroku, Netlify, CSS, HTML<br><br>
+<b><em>FAMILIARITY:</em></b><br/>Axios, Bootstrap, Grid<br><br>
+<b><em>CERTIFICATIONS:</em></b><br/>Aviatrix Certified Engineer Multi-Cloud Networking Associate (#2022-17612);<br/>HackerRank Javascript (Basic) Skills Assessment Certificate (ID: 0AD673DE7EF6)
             </p> <br> <br>
       
              <div class="row gx-4 gx-lg-5">
@@ -135,6 +136,61 @@
           <h2 class="mb-5">Recent Projects</h2>
         </div>
         <div class="row gx-0">
+
+<!-- Whirdle App (start) -->
+          <div class="col-lg-6">
+            <a style="border: 10px solid rgb(20, 5, 72)" class="portfolio-item" href="#!">
+              <div class="caption">
+                <div class="caption-content">
+                  <div style="margin-top:  5rem" class="h2">Whirdle</div>
+                  <p style="font-size: 15px" class="mb-0">
+                    A Wordle clone, this full stack API is out of this whirld<br /><br />
+                  </p>
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myWhirdleModal">For more information</button>
+                </div>
+              </div>
+              <div style="background-color: coral" class="d-flex bg-danger container">
+        <div class="bg-success p-2 border flex-fill">
+              <img
+                class="img-fluid"
+                src="assets/img/Whirdle.png"
+                alt="..."
+              />
+              </div>
+              </div>
+            </a>
+          </div>
+
+<!-- The Modal - Whirdle -->
+<div class="modal" id="myWhirdleModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div style="background-color: rgb(216, 150, 161)"" class="modal-header">
+        <h4 class="modal-title">
+           <a href="https://shiny-lebkuchen-9c51e9.netlify.app/"  target="_blank">
+       Project: Whirdle</a></h4>
+        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <b><i>Whirdle</b></i> was my addition to the numerous Wordle clones floating out there in cyberspace. I had taken a look at some of them and noticed some didn't replicate Wordle's logic very well. I also thought of some features that I would have liked to see added. And then I thought, "Well, why not add them?" And Whirdle soon thereafter was born. The app is full-stack, having saved the word bank and keyboard letters on MongoDB. It also paves the way for when I add login functionality and begin saving users' stats. The projects definitely has given me a better understanding and appreciation of React hooks. Between the logic of the game and the CSS involved, it was a fun, highly interesting and, at times, challenging project to undertake.<br/><br/>
+        <b>Technologies employed:</b> <br/>React.js, MongoDB, Node.js, Express, Mongoose, Bootstrap, Flexbox, Heroku and Netlify<br/>
+        <b>Github repository:</b><br/>
+        <b>Front-end:</b><a style="color:black" href="https://github.com/whirdle-ging/whirdle-front-end" target="_blank">https://github.com/whirdle-ging/whirdle-front-end</a><br/>
+        <b>Back-end:</b> <a style="color:black" href="https://github.com/whirdle-ging/whirdle-back-end" target="_blank">https://github.com/whirdle-ging/whirdle-back-end</a>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Whirdle App (end) -->       
 
 <!-- GA Hackathon App (start) -->
           <div class="col-lg-6">
@@ -440,11 +496,13 @@
           <h3 class="text-secondary mb-0">My Articles and (Future) Blog</h3>
           <h2 class="mb-5">Musings and Observations</h2>
           </div>
-      <div class="content-section text-black">
-      <div class="container px-4 px-lg-5 text-center">
+      <div class="content-section text-black-writings">
         <h2>ARTICLES</h2>
-        <a href="https://medium.com/@ging.m.louie/easy-javascript-implementation-of-a-graphs-adjacency-list-1a52f1bb9a5c"><h3 id="writings">"Easy Javascript Implementation of a Graph as an Adjacency List"</h3></a>
+        <a href="https://medium.com/@ging.m.louie/easy-javascript-implementation-of-a-graphs-adjacency-list-1a52f1bb9a5c"><h3 id="writings">"Easy Javascript Implementation of a Graph as an Adjacency List."</h3></a>
         <h4><em>medium.com</em> (August 15, 2022) </h4>
+        <br />
+          <a href="https://medium.com/@ging.m.louie/write-through-cloning-a-graph-leetcode-problem-133-719691307973"><h3 id="writings">"Write-Through: Cloning a Graph (LeetCode Problem 133)"</h3></a>
+        <h4><em>medium.com</em> (October 10, 2022) </h4>
         <br />
       </div>
       </div>

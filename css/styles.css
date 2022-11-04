@@ -11695,6 +11695,11 @@ html {
 	text-transform: uppercase;
 }
 
+.content-section-text-black-writings {
+	margin-left: 0rem;
+	padding: 0rem;
+}
+
 .text-faded {
 	color: rgba(255, 255, 255, 0.7);
 }
@@ -11990,4 +11995,6 @@ footer.footer .social-link:hover {
 
 h3#writings {
 	color: #1815D4;
+	margin-left: 0rem;
+	padding: 0rem;
 }
